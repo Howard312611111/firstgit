@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/ros_talker.dir/servo_motor/pub.cpp.o  -o ros_talker 

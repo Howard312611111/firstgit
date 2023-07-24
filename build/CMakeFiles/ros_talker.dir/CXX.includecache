@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/howard/ros_ws/src/servo_motor/pub.cpp
+ros/ros.h
+/home/howard/ros_ws/src/servo_motor/ros/ros.h
+std_msgs/Float32.msg
+/home/howard/ros_ws/src/servo_motor/std_msgs/Float32.msg
+sstream
+-
+
