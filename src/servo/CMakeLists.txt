@@ -209,5 +209,9 @@ include_directories(
 add_executable(ros_talker src/pub.cpp)
 target_link_libraries(ros_talker ${catkin_LIBRARIES})
 
-add_executable(ros_listener src/sub.cpp)
-target_link_libraries(ros_listener ${catkin_LIBRARIES})
+##add_executable(ros_listener src/sub.cpp)
+##target_link_libraries(ros_listener ${catkin_LIBRARIES})
+
+add_executable(ros_talker_input src/pub_input.cpp)
+target_link_libraries(ros_talker_input ${catkin_LIBRARIES})
+

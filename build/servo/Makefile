@@ -168,19 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-servo/CMakeFiles/ros_listener.dir/rule:
-	cd /home/howard/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 servo/CMakeFiles/ros_listener.dir/rule
-.PHONY : servo/CMakeFiles/ros_listener.dir/rule
+servo/CMakeFiles/ros_talker_input.dir/rule:
+	cd /home/howard/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 servo/CMakeFiles/ros_talker_input.dir/rule
+.PHONY : servo/CMakeFiles/ros_talker_input.dir/rule
 
 # Convenience name for target.
-ros_listener: servo/CMakeFiles/ros_listener.dir/rule
+ros_talker_input: servo/CMakeFiles/ros_talker_input.dir/rule
 
-.PHONY : ros_listener
+.PHONY : ros_talker_input
 
 # fast build rule for target.
-ros_listener/fast:
-	cd /home/howard/ros_ws/build && $(MAKE) -f servo/CMakeFiles/ros_listener.dir/build.make servo/CMakeFiles/ros_listener.dir/build
-.PHONY : ros_listener/fast
+ros_talker_input/fast:
+	cd /home/howard/ros_ws/build && $(MAKE) -f servo/CMakeFiles/ros_talker_input.dir/build.make servo/CMakeFiles/ros_talker_input.dir/build
+.PHONY : ros_talker_input/fast
 
 # Convenience name for target.
 servo/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
@@ -449,32 +449,32 @@ src/pub.cpp.s:
 	cd /home/howard/ros_ws/build && $(MAKE) -f servo/CMakeFiles/ros_talker.dir/build.make servo/CMakeFiles/ros_talker.dir/src/pub.cpp.s
 .PHONY : src/pub.cpp.s
 
-src/sub.o: src/sub.cpp.o
+src/pub_input.o: src/pub_input.cpp.o
 
-.PHONY : src/sub.o
+.PHONY : src/pub_input.o
 
 # target to build an object file
-src/sub.cpp.o:
-	cd /home/howard/ros_ws/build && $(MAKE) -f servo/CMakeFiles/ros_listener.dir/build.make servo/CMakeFiles/ros_listener.dir/src/sub.cpp.o
-.PHONY : src/sub.cpp.o
+src/pub_input.cpp.o:
+	cd /home/howard/ros_ws/build && $(MAKE) -f servo/CMakeFiles/ros_talker_input.dir/build.make servo/CMakeFiles/ros_talker_input.dir/src/pub_input.cpp.o
+.PHONY : src/pub_input.cpp.o
 
-src/sub.i: src/sub.cpp.i
+src/pub_input.i: src/pub_input.cpp.i
 
-.PHONY : src/sub.i
+.PHONY : src/pub_input.i
 
 # target to preprocess a source file
-src/sub.cpp.i:
-	cd /home/howard/ros_ws/build && $(MAKE) -f servo/CMakeFiles/ros_listener.dir/build.make servo/CMakeFiles/ros_listener.dir/src/sub.cpp.i
-.PHONY : src/sub.cpp.i
+src/pub_input.cpp.i:
+	cd /home/howard/ros_ws/build && $(MAKE) -f servo/CMakeFiles/ros_talker_input.dir/build.make servo/CMakeFiles/ros_talker_input.dir/src/pub_input.cpp.i
+.PHONY : src/pub_input.cpp.i
 
-src/sub.s: src/sub.cpp.s
+src/pub_input.s: src/pub_input.cpp.s
 
-.PHONY : src/sub.s
+.PHONY : src/pub_input.s
 
 # target to generate assembly for a file
-src/sub.cpp.s:
-	cd /home/howard/ros_ws/build && $(MAKE) -f servo/CMakeFiles/ros_listener.dir/build.make servo/CMakeFiles/ros_listener.dir/src/sub.cpp.s
-.PHONY : src/sub.cpp.s
+src/pub_input.cpp.s:
+	cd /home/howard/ros_ws/build && $(MAKE) -f servo/CMakeFiles/ros_talker_input.dir/build.make servo/CMakeFiles/ros_talker_input.dir/src/pub_input.cpp.s
+.PHONY : src/pub_input.cpp.s
 
 # Help Target
 help:
@@ -486,7 +486,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... ros_listener"
+	@echo "... ros_talker_input"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
@@ -509,9 +509,9 @@ help:
 	@echo "... src/pub.o"
 	@echo "... src/pub.i"
 	@echo "... src/pub.s"
-	@echo "... src/sub.o"
-	@echo "... src/sub.i"
-	@echo "... src/sub.s"
+	@echo "... src/pub_input.o"
+	@echo "... src/pub_input.i"
+	@echo "... src/pub_input.s"
 .PHONY : help
 
 
